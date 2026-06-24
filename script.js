@@ -3,7 +3,7 @@ let filteredScholarships = [];
 
 async function loadCSV() {
   const SHEET_URL =
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRKM0p_fsMQflATY8atPDDjfz2D56OhBbjZdlRFos7Na1wKl0oTQsF2ZotcK79zI4DO_RuJezonVw7b/pub?output=csv";
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRB_FAOEuNgb_609rzCNB8FHHiwQPQBJwmkTtjPWw9KvRLJH3UoeyiiyJ11E-Q6DaIoslog5oiu7nC4/pub?output=csv";
 
   const response = await fetch(SHEET_URL + "&v=" + Date.now());
   const text = await response.text();
